@@ -1,0 +1,81 @@
+<!doctype html><html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>시험 데이터 포털 — 접수자 증감률 · 경쟁률</title>
+<style>
+:root{--bg:#0b1220;--fg:#e5e7eb;--muted:#9ca3af;--card:#0f172a;--line:#1f2937;--accent:#60a5fa}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif}
+header.primary{padding:22px;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(11,18,32,.7);backdrop-filter:blur(6px);z-index:10}
+header.primary h1{margin:0;font-size:20px}
+header.primary .desc{margin:6px 0 0;color:var(--muted);font-size:13px}
+.tabs{display:flex;gap:8px;margin-top:10px}
+.tab-btn{appearance:none;border:1px solid var(--line);background:#0b1220;color:var(--fg);padding:8px 12px;border-radius:10px;cursor:pointer}
+.tab-btn.active{border-color:#2563eb;box-shadow:0 0 0 2px rgba(37,99,235,.2) inset}
+main{max-width:1200px;margin:0 auto;padding:22px}
+.block h2{font-size:18px;margin:14px 0 10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.card-head{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;border-bottom:1px solid var(--line)}
+.card-head h3{margin:0;font-size:15px;font-weight:600}
+.open{color:var(--accent);font-size:12px;text-decoration:none}.open:hover{text-decoration:underline}
+.badge{font-size:12px;color:#cbd5e1;background:#374151;padding:3px 8px;border-radius:999px}
+.embed-wrap{position:relative}
+iframe{width:100%;height:520px;border:0;background:#0b1220}
+.fallback{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:12px;background:rgba(15,23,42,.9)}
+.fallback.hidden{display:none}.fallback .big{display:inline-block;padding:8px 12px;border:1px solid var(--line);border-radius:10px}
+.placeholder{padding:14px;color:var(--muted);font-size:14px}
+footer{color:var(--muted);font-size:12px;padding:24px;text-align:center}
+</style>
+</head><body>
+<header class="primary">
+  <h1>시험 데이터 포털</h1>
+  <p class="desc">모든 HTML 시각화를 한 페이지에서 탭으로 모아봅니다.</p>
+  <div class="tabs" role="tablist">
+    <button class="tab-btn active" data-tab="rate" role="tab" aria-selected="true">접수자 증감률</button>
+    <button class="tab-btn" data-tab="comp" role="tab" aria-selected="false">경쟁률</button>
+  </div>
+</header>
+<main>
+  <div id="tab-rate" class="tab-panel">
+    <section class="block"><h2>접수자 증감률</h2><div class="grid">
+      <!-- 존재하면 임베드, 없으면 “파일 대기중” -->
+      <!-- 목록은 아래 파일명 섹션을 참고해 필요시 추가/삭제 -->
+      <!-- 9급 공무원 -->
+      <!-- 카드 생성 헬퍼 역할: 아래 함수를 수동으로 펼친 형태 -->
+      <article class="card"><header class="card-head"><h3>9급 공무원_rate_full</h3><a class="open" href="./9급 공무원_rate_full.html" target="_blank" rel="noopener">새 창으로 열기 ↗</a></header><div class="embed-wrap"><iframe src="./9급 공무원_rate_full.html" loading="lazy"></iframe><div class="fallback hidden"><p>임베드가 차단되어 링크로 열도록 전환했어요.</p><a class="open big" href="./9급 공무원_rate_full.html" target="_blank" rel="noopener">바로 열기</a></div></div></article>
+
+      <article class="card"><header class="card-head"><h3>LEET_rate_full</h3><a class="open" href="./LEET_rate_full.html" target="_blank" rel="noopener">새 창으로 열기 ↗</a></header><div class="embed-wrap"><iframe src="./LEET_rate_full.html" loading="lazy"></iframe><div class="fallback hidden"><p>임베드가 차단되어 링크로 열도록 전환했어요.</p><a class="open big" href="./LEET_rate_full.html" target="_blank" rel="noopener">바로 열기</a></div></div></article>
+
+      <article class="card"><header class="card-head"><h3>노무사_rate_full</h3><a class="open" href="./노무사_rate_full.html" target="_blank" rel="noopener">새 창으로 열기 ↗</a></header><div class="embed-wrap"><iframe src="./노무사_rate_full.html" loading="lazy"></iframe><div class="fallback hidden"><p>임베드가 차단되어 링크로 열도록 전환했어요.</p><a class="open big" href="./노무사_rate_full.html" target="_blank" rel="noopener">바로 열기</a></div></div></article>
+
+      <article class="card"><header class="card-head"><h3>법무사_rate_full</h3><a class="open" href="./법무사_rate_full.html" target="_blank" rel="noopener">새 창으로 열기 ↗</a></header><div class="embed-wrap"><iframe src="./법무사_rate_full.html" loading="lazy"></iframe><div class="fallback hidden"><p>임베드가 차단되어 링크로 열도록 전환했어요.</p><a class="open big" href="./법무사_rate_full.html" target="_blank" rel="noopener">바로 열기</a></div></div></article>
+
+      <article class="card"><header class="card-head"><h3>변호사 시험_rate_full</h3><a class="open" href="./변호사 시험_rate_full.html" target="_blank" rel="noopener">새 창으로 열기 ↗</a></header><div class="embed-wrap"><iframe src="./변호사 시험_rate_full.html" loading="lazy"></iframe><div class="fallback hidden"><p>임베드가 차단되어 링크로 열도록 전환했어요.</p><a class="open big" href="./변호사 시험_rate_full.html" target="_blank" rel="noopener">바로 열기</a></div></div></article>
+
+      <article class="card"><header class="card-head"><h3>세무사_rate_full</h3><a class="open" href="./세무사_rate_full.html" target="_blank" rel="noopener">새 창으로 열기 ↗</a></header><div class="embed-wrap"><iframe src="./세무사_rate_full.html" loading="lazy"></iframe><div class="fallback hidden"><p>임베드가 차단되어 링크로 열도록 전환했어요.</p><a class="open big" href="./세무사_rate_full.html" target="_blank" rel="noopener">바로 열기</a></div></div></article>
+
+      <article class="card"><header class="card-head"><h3>회계사_rate_full</h3><a class="open" href="./회계사_rate_full.html" target="_blank" rel="noopener">새 창으로 열기 ↗</a></header><div class="embed-wrap"><iframe src="./회계사_rate_full.html" loading="lazy"></iframe><div class="fallback hidden"><p>임베드가 차단되어 링크로 열도록 전환했어요.</p><a class="open big" href="./회계사_rate_full.html" target="_blank" rel="noopener">바로 열기</a></div></div></article>
+    </div></section>
+  </div>
+
+  <div id="tab-comp" class="tab-panel" hidden>
+    <section class="block"><h2>경쟁률</h2><div class="grid">
+      <article class="card"><header class="card-head"><h3>9급 공무원_competition_full</h3><span class="badge">파일 대기중</span></header><div class="placeholder"><p><code>9급 공무원_competition_full.html</code> 업로드 시 표시됩니다.</p></div></article>
+      <article class="card"><header class="card-head"><h3>LEET_competition_full</h3><span class="badge">파일 대기중</span></header><div class="placeholder"><p><code>LEET_competition_full.html</code> 업로드 시 표시됩니다.</p></div></article>
+      <article class="card"><header class="card-head"><h3>노무사_competition_full</h3><span class="badge">파일 대기중</span></header><div class="placeholder"><p><code>노무사_competition_full.html</code> 업로드 시 표시됩니다.</p></div></article>
+      <article class="card"><header class="card-head"><h3>법무사_competition_full</h3><span class="badge">파일 대기중</span></header><div class="placeholder"><p><code>법무사_competition_full.html</code> 업로드 시 표시됩니다.</p></div></article>
+      <article class="card"><header class="card-head"><h3>변호사 시험_competition_full</h3><span class="badge">파일 대기중</span></header><div class="placeholder"><p><code>변호사 시험_competition_full.html</code> 업로드 시 표시됩니다.</p></div></article>
+      <article class="card"><header class="card-head"><h3>세무사_competition_full</h3><span class="badge">파일 대기중</span></header><div class="placeholder"><p><code>세무사_competition_full.html</code> 업로드 시 표시됩니다.</p></div></article>
+      <article class="card"><header class="card-head"><h3>회계사_competition_full</h3><a class="open" href="./회계사_competition_full.html" target="_blank" rel="noopener">새 창으로 열기 ↗</a></header><div class="embed-wrap"><iframe src="./회계사_competition_full.html" loading="lazy"></iframe><div class="fallback hidden"><p>임베드가 차단되어 링크로 열도록 전환했어요.</p><a class="open big" href="./회계사_competition_full.html" target="_blank" rel="noopener">바로 열기</a></div></div></article>
+    </div></section>
+  </div>
+</main>
+<footer>© 시험 데이터 포털 — GitHub Pages에 올리면 그대로 작동합니다. (임베드 차단 시 자동 링크 전환)</footer>
+
+<script>
+const tabs=document.querySelectorAll('.tab-btn');
+const panels={rate:document.getElementById('tab-rate'),comp:document.getElementById('tab-comp')};
+tabs.forEach(btn=>{btn.addEventListener('click',()=>{tabs.forEach(b=>b.classList.remove('active'));btn.classList.add('active');const k=btn.dataset.tab;panels.rate.hidden=k!=='rate';panels.comp.hidden=k!=='comp';btn.setAttribute('aria-selected','true');tabs.forEach(b=>b!==btn&&b.setAttribute('aria-selected','false'));})});
+document.querySelectorAll('iframe').forEach(f=>{let t=setTimeout(()=>{const wrap=f.parentElement,fb=wrap.querySelector('.fallback');if(fb){fb.classList.remove('hidden');f.style.display='none';}},5000);f.addEventListener('load',()=>clearTimeout(t));f.addEventListener('error',()=>{const wrap=f.parentElement,fb=wrap.querySelector('.fallback');if(fb){fb.classList.remove('hidden');f.style.display='none';}});});
+</script>
+</body></html>
+
